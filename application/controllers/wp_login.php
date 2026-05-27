@@ -69,7 +69,6 @@ class Wp_login extends CI_Controller {
 						);
 		$captcha=create_captcha($nilai);
 		$data=array(
-			'captcha_id'=>'',
 			'captcha_time'=>$captcha['time'],
 			'ip_address'=>$_SERVER['REMOTE_ADDR'],
 			'word'=>$captcha['word']
